@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creaciones V y L - Decoraciones para bebe en Cartagena</title>
+  <meta name="description" content="Decoraciones en MDF personalizadas para habitaciones de bebe. Hechas con amor en Cartagena, Colombia. Envios a todo el pais." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="bubbles" aria-hidden="true">
+    <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+    <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+    <span class="bubble"></span><span class="bubble"></span>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo">
+        <img src="img/Logo.png" alt="Creaciones V y L" class="header__logo-img" />
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Navegacion principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav__link">Sobre Nosotros</a></li>
+          <li><a href="productos.html" class="nav__link">Productos</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Ver carrito">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h2>Tu carrito &#x1F6D2;</h2>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Cerrar carrito">&#x2715;</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems">
+      <p class="cart-empty">Tu carrito esta vacio &#x1F338;</p>
+    </div>
+    <div class="cart-drawer__footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <a href="#" class="btn btn--gold btn--full" id="checkoutBtn">&#x1F4AC; Cotizar por WhatsApp</a>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <main>
+
+    <section class="hero" id="inicio" aria-label="Bienvenida">
+      <div class="hero__inner container">
+        <div class="hero__image fade-in">
+          <div class="hero__img-wrapper">
+            <img src="img/KitCompleto1Nombre_.jpeg" alt="Decoracion de cuarto de bebe con nombre personalizado en tonos beige y dorado" class="hero__img" loading="eager" />
+            <div class="hero__img-badge">&#x2736; Hecho a mano</div>
+          </div>
+        </div>
+        <div class="hero__content fade-in fade-in--delay">
+          <p class="hero__eyebrow">Decoraciones en MDF personalizadas</p>
+          <h1 class="hero__title">Transformamos espacios en<br /><em>recuerdos hermosos</em> &#x2728;</h1>
+          <p class="hero__text">Bienvenidos a Creaciones V y L, donde cada detalle esta pensado para llenar de ternura y magia los espacios mas especiales. Creamos decoraciones en MDF personalizadas para habitaciones de bebe, hechas con amor y delicadeza.</p>
+          <div class="hero__actions">
+            <a href="productos.html" class="btn btn--gold">&#x2728; Ver productos</a>
+            <a href="https://wa.me/573026603400?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20decoraciones%20%E2%9C%A8" class="btn btn--outline" target="_blank" rel="noopener">&#x1F4AC; Cotizar por WhatsApp</a>
+          </div>
+          <div class="hero__trust">
+            <span>&#x1F338; 100% personalizadas</span>
+            <span>&#x1F4E6; Envios a Colombia</span>
+            <span>&#x1F49B; Hechas con amor</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="video-section" aria-label="Video de Creaciones V y L">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">Miranos en accion</p>
+          <h2 class="section-title">Asi creamos la magia &#x2728;</h2>
+        </div>
+        <div class="video-wrapper fade-in">
+          <video src="img/VideoCreaciones.mp4" autoplay muted loop playsinline aria-label="Video de Creaciones V y L"></video>
+          <div class="video-overlay">
+            <span class="video-badge">&#x2736; Creaciones V y L</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="productos" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">Nuestras creaciones</p>
+          <h2 class="section-title" id="products-title">Los favoritos de nuestras mamitas &#x1F49B;</h2>
+          <p class="section-subtitle">Cada pieza es unica, disenada con amor para el espacio mas especial de tu bebe.</p>
+        </div>
+        <div class="products__grid" id="productsGrid"></div>
+        <div class="products__cta fade-in">
+          <a href="productos.html" class="btn btn--gold">&#x2728; Ver catalogo completo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image fade-in">
+            <img src="img/habitaciondecorada.jpeg" alt="Decoraciones en MDF de Creaciones V y L" loading="lazy" />
+            <div class="about__stars" aria-hidden="true">
+              <span class="star star--1">&#x2736;</span>
+              <span class="star star--2">&#x2736;</span>
+              <span class="star star--3">&#x2736;</span>
+            </div>
+          </div>
+          <div class="about__content fade-in fade-in--delay">
+            <p class="section-eyebrow">Nuestra historia</p>
+            <h2 class="section-title" id="about-title">Creadas con amor, <em>desde el corazon</em></h2>
+            <p>Somos un emprendimiento familiar nacido en Cartagena, Colombia, con el sueno de hacer que cada habitacion de bebe sea un lugar magico y lleno de amor.</p>
+            <p>Trabajamos el MDF con dedicacion, pintando y personalizando cada pieza a mano. Desde nombres iluminados hasta cuadros y coronas decorativas, todo lo que hacemos lleva un pedacito de nuestro corazon.</p>
+            <ul class="about__values">
+              <li>
+                <span class="value-icon">&#x1F338;</span>
+                <div><strong>Personalizacion total</strong><p>Cada pieza se adapta a tus colores, nombre y estilo.</p></div>
+              </li>
+              <li>
+                <span class="value-icon">&#x2736;</span>
+                <div><strong>Calidad premium</strong><p>Materiales de alta calidad, acabados impecables.</p></div>
+              </li>
+              <li>
+                <span class="value-icon">&#x1F49B;</span>
+                <div><strong>Hecho con amor</strong><p>Cada detalle pensado para el espacio mas especial.</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram" id="instagram" aria-labelledby="instagram-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">@creacionesvyl</p>
+          <h2 class="section-title" id="instagram-title">Siguenos y mira nuestras creaciones &#x2728;</h2>
+          <p class="section-subtitle">Cada dia compartimos nuevas piezas y proyectos terminados.</p>
+        </div>
+        <div class="instagram__grid fade-in" id="instagramGrid"></div>
+        <div class="instagram__cta fade-in">
+          <a href="https://instagram.com/creacionesvyl" target="_blank" rel="noopener" class="btn btn--outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Ver en Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonios" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">Opiniones reales</p>
+          <h2 class="section-title" id="testimonials-title">Lo que dicen nuestras mamitas &#x1F49B;</h2>
+          <p class="section-subtitle">Capturas reales de WhatsApp. Nada mas autentico que eso.</p>
+        </div>
+        <div class="testimonials__track-wrapper">
+          <div class="testimonials__track" id="testimonialsTrack"></div>
+        </div>
+        <div class="testimonials__dots" id="testimonialsDots" aria-label="Navegacion de testimonios"></div>
+      </div>
+    </section>
+
+    <section class="shipping" id="envios" aria-labelledby="shipping-title">
+      <div class="container">
+        <div class="shipping__inner">
+          <div class="shipping__content fade-in">
+            <p class="section-eyebrow">Donde estamos</p>
+            <h2 class="section-title" id="shipping-title">Estamos en Cartagena &#x1F1E8;&#x1F1F4;</h2>
+            <p>Realizamos envios a toda Colombia a traves de Interrapidisimo, Envia o Servientrega, segun la preferencia de nuestros clientes.</p>
+            <div class="shipping__carriers">
+              <div class="carrier"><span class="carrier-icon">&#x1F69A;</span><span>Interrapidisimo</span></div>
+              <div class="carrier"><span class="carrier-icon">&#x1F4E6;</span><span>Envia</span></div>
+              <div class="carrier"><span class="carrier-icon">&#x1F3C3;</span><span>Servientrega</span></div>
+            </div>
+            <div class="shipping__info">
+              <div class="info-item">
+                <span class="info-icon">&#x23F1;&#xFE0F;</span>
+                <div><strong>Tiempo de produccion</strong><p>3 a 7 dias habiles segun el pedido</p></div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">&#x1F4CD;</span>
+                <div><strong>Cartagena de Indias</strong><p>Bolivar, Colombia</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="shipping__map fade-in fade-in--delay">
+            <div class="map-placeholder">
+              <div class="map-pin">&#x1F4CD;</div>
+              <p>Cartagena de Indias</p>
+              <p class="map-sub">Bolivar, Colombia &#x1F1E8;&#x1F1F4;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="section-eyebrow">Hablemos</p>
+          <h2 class="section-title" id="contact-title">&#xBF;Lista para crear algo especial? &#x2728;</h2>
+          <p class="section-subtitle">Cuentanos tu idea y la hacemos realidad.</p>
+        </div>
+        <div class="contact__inner">
+          <div class="contact__channels fade-in">
+            <a href="https://wa.me/573026603400?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20decoraciones%20%E2%9C%A8" class="contact-card contact-card--whatsapp" target="_blank" rel="noopener">
+              <span class="contact-card__icon">&#x1F4AC;</span>
+              <div><strong>WhatsApp</strong><p>Respuesta rapida</p></div>
+              <span class="contact-card__arrow">&#x2192;</span>
+            </a>
+            <a href="https://instagram.com/creacionesvyl" class="contact-card contact-card--instagram" target="_blank" rel="noopener">
+              <span class="contact-card__icon">&#x1F4F8;</span>
+              <div><strong>Instagram</strong><p>@creacionesvyl</p></div>
+              <span class="contact-card__arrow">&#x2192;</span>
+            </a>
+          </div>
+          <form class="contact__form fade-in fade-in--delay" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Tu nombre</label>
+              <input type="text" id="name" name="name" placeholder="Mama de Sofia &#x1F338;" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+57 300 000 0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="message">&#xBF;Que tienes en mente?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Cuentanos sobre la decoracion que suenas para tu bebe &#x2728;" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">Enviar mensaje &#x1F49B;</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo">
+            <img src="img/Logo.png" alt="Creaciones V y L" class="header__logo-img header__logo-img--footer" />
+          </a>
+          <p class="footer__tagline">Decoramos con amor los espacios mas especiales &#x2728;</p>
+        </div>
+        <div class="footer__links">
+          <h3>Navegacion</h3>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h3>Siguenos</h3>
+          <div class="social-links">
+            <a href="https://instagram.com/creacionesvyl" target="_blank" rel="noopener" aria-label="Instagram de Creaciones V y L">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="https://wa.me/573026603400?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20decoraciones%20%E2%9C%A8" target="_blank" rel="noopener" aria-label="WhatsApp de Creaciones V y L">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+          <p class="footer__location">&#x1F4CD; Cartagena, Colombia</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&#xA9; 2025 Creaciones V y L &middot; Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573026603400?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20decoraciones%20%E2%9C%A8" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Enviar mensaje por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Enviar mensaje</span>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
